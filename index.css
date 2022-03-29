@@ -53,4 +53,8 @@ div.input {
 div.output {
 	padding: 10px;
 	border-top: var(--border);
+	word-break: break-all;
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
