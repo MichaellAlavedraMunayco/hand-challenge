@@ -1,0 +1,56 @@
+:root {
+	--background: #eeeeee;
+	--border: 1px solid lightgrey;
+	--article-background: white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	font-family: "Manrope";
+	background: var(--background);
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 400px;
+	margin: auto;
+}
+
+section > header {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+article {
+	background: var(--article-background);
+	border: var(--border);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px;
+	border-bottom: var(--border);
+}
+
+div.input {
+	max-height: 180px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 10px;
+}
+
+div.output {
+	padding: 10px;
+	border-top: var(--border);
+}
