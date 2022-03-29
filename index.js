@@ -45,6 +45,6 @@ const compiler = (code) => new Promise(resolve => {
 
 const $ = (selector) => document.querySelector(selector);
 
-compiler($('#input-test-1').innerText).then((output) => $('#output-test-1').innerHTML = output);
-compiler($('#input-test-2').innerText).then((output) => $('#output-test-2').innerHTML = output);
+compiler($('#input-test-1').innerText).then(output => $('#output-test-1').innerHTML = output);
+compiler($('#input-test-2').innerText).then(output => $('#output-test-2').innerHTML = output);
 // compiler($('#input-test-3').innerText).then((output) => $('#output-test-3').innerHTML = output);
